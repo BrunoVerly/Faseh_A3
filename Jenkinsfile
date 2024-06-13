@@ -5,8 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building e Deploy Java..'
-                sshagent(credentials: ['150.230.88.104']) {
-                    sh "ssh -o StrictHostKeyChecking=no -l opc 150.230.88.104 'cd ~/projeto && ./bash_script.sh'"
+                sshagent(credentials: ['159.112.177.250']) {
+                    sh "ssh -o StrictHostKeyChecking=no -l opc 159.112.177.250 'cd ~/projeto && ./bash_script.sh'"
                 }
             }
         }
@@ -14,8 +14,8 @@ pipeline {
         stage('Deploy') {
             steps {
                echo 'Deploy Mysql..'
-               sshagent(credentials: ['150.230.88.104']) {
-                    sh "ssh -o StrictHostKeyChecking=no -l opc 150.230.88.104 'cd ~/projeto && ./mysql_bash_script.sh'"
+               sshagent(credentials: ['159.112.177.250']) {
+                    sh "ssh -o StrictHostKeyChecking=no -l opc 159.112.177.250 'cd ~/projeto && ./mysql_bash_script.sh'"
                }
             }
         }
