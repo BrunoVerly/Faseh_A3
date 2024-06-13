@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building e Deploy Java..'
                 sshagent(credentials: ['159.112.177.250']) {
-                    sh "ssh -o StrictHostKeyChecking=no -l ubuntu 159.112.177.250 'cd ~/oficina/Faseh_A3/src/main/resources && ./bash_script.sh'"
+                    sh "ssh -o StrictHostKeyChecking=no -l ubuntu 159.112.177.250 'cd ~/oficina/Faseh_A3/src/main/resources && ./bash_script-banco-container.sh'"
                 }
             }
         }
