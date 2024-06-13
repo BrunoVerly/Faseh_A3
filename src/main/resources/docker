@@ -14,7 +14,9 @@ sudo docker build -t oficina-spring .
 
 sleep 10
 
-sudo start docker mysql-container
+docker stop $(docker ps -q)
+
+sudo docker start mysql-container
 sudo docker run -d -p 8080:8080 oficina-spring
 
 
