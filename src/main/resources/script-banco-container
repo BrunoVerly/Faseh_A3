@@ -1,7 +1,11 @@
 #!/bin/bash
-#quando for executar novamente descomentar (cuidado que apaga seu banco
-#sudo podman stop oficina-db
-#sudo podman rm oficina-db
-sudo podman pull docker.io/library/mysql:8
+#parar e reinicar containers container oficina e mysql
+sudo stop start 0b6af8c4b649
+docker stop cef71e925b60
+
 sleep 10
-sudo podman run -d -p 3306:3306 --name oficina-db -e MYSQL_ROOT_PASSWORD=mysql123oficina -e MYSQL_ROOT_HOST='%' -e MYSQL_DATABASE=oficina_db mysql:8
+
+sudo docker start cef71e925b60
+sudo docker start 0b6af8c4b649
+
+
