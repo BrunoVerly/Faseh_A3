@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building e Deploy Java..'
                 sshagent(credentials: ['159.112.177.250']) {
-                    sh "ssh -o StrictHostKeyChecking=no -l ubuntu 159.112.177.250 'sudo cd ~/oficina/Faseh_A3/src/main/resources && ./docker'"
+                    sh "ssh -o StrictHostKeyChecking=no -l ubuntu 159.112.177.250 'cd ~/oficina/Faseh_A3/src/main/resources && ./docker'"
                 }
             }
         }
