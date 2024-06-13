@@ -1,11 +1,9 @@
-#!/bin/bash
 #parar e reinicar containers container oficina e mysql
-sudo stop start 0b6af8c4b649
-docker stop cef71e925b60
+sudo doker stop mysql-container
+sudo docker stop docker
 
-sleep 10
 
-sudo docker start cef71e925b60
-sudo docker start 0b6af8c4b649
+sudo docker start mysql-container
+sudo docker start docker
 
 
