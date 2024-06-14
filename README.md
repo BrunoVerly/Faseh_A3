@@ -3,11 +3,8 @@
 # TRABALHO A3 MMTE de Software
 
 Instrutores: 
-Tiago Siqueira (Prática)
-Cleber Leão (Teórica)
+Cleber Leão (Teórica) e Tiago Siqueira (Prática)
 
 Integrantes:
-Nome: Adahil Rodrigues Pimentel Neto
-RA: 972410586
-Nome: Bruno Verly Souza
-RA: 972410047
+Adahil Rodrigues Pimentel Neto (RA: 972410586) e Bruno Verly Souza (RA: 972410047)
+
