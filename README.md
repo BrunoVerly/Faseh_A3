@@ -1,6 +1,6 @@
 # Oficina-Spring-Boot
 
-# TRABALHO A3 MMTE de Software
+# TRABALHO A3 MMTES
 
 Instrutores: 
 Cleber Leão (Teórica) e Tiago Siqueira (Prática)
